@@ -6,14 +6,10 @@ class Solution {
             {
                 num2 -= num1;
                 count++;
-            } else if(num1 > num2)
+            } else
             {
               num1 -= num2;
               count++;
-            }else if(num1 == num2)
-            {
-                num1 -= num2;
-                count++;
             }
         }
         return count;
