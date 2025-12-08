@@ -7,11 +7,7 @@ class Solution {
             }
         }
         if(list.size() == 1) return 0;
-        Collections.sort(list);
-        int first = list.get(0);
-        int last = list.get(list.size() - 1);
-        int ans = last - first;
-        return ans;
+        return list.get(list.size() - 1) - list.get(0);
     }
     static boolean isPrime(int n){
         if(n <= 1) return false;
