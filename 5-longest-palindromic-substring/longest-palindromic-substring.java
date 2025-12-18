@@ -4,7 +4,7 @@ class Solution {
         for(int i = 0; i<s.length(); i++){
             for(int j = i; j<s.length(); j++){
                 if(isPalindrome(s, i, j)){
-                    if(subLen(s, i, j) > ans.length()){
+                    if( j-i+1 > ans.length()){
                         ans = s.substring(i, j+1);
                     }
                 }
@@ -23,8 +23,8 @@ class Solution {
         }
         return true;
     }
-    static int subLen(String s, int l, int r){
-        String len = s.substring(l, r+1);
-        return len.length();
-    }
+    // static int subLen(String s, int l, int r){
+    //     String len = s.substring(l, r+1);
+    //     return len.length();
+    // }
 }
